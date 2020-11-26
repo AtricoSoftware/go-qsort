@@ -21,7 +21,7 @@ func main() {
 			fmt.Println(v)
 		}
 		start := time.Now()
-		qsort(v)
+		Qsort(v)
 		elapsed := time.Now().Sub(start)
 		fmt.Printf("Time taken: %s\n", elapsed)
 		if len(v) <= 100 {

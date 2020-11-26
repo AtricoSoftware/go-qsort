@@ -15,11 +15,11 @@ func TestEmpty(t *testing.T) {
 
 	// Act
 	fmt.Println(list)
-	qsort(list)
+	Qsort(list)
 	fmt.Println(list)
 
 	// Assert
-	Assert(t).That(len(list), is.EqualTo(0), "Empty result")
+	// No panic!
 }
 
 func TestSingle(t *testing.T) {
@@ -29,11 +29,10 @@ func TestSingle(t *testing.T) {
 
 	// Act
 	fmt.Println(list)
-	qsort(list)
+	Qsort(list)
 	fmt.Println(list)
 
 	// Assert
-	Assert(t).That(len(list), is.EqualTo(1), "Single result")
 	Assert(t).That(list[0], is.EqualTo(value), "Same value")
 }
 
@@ -44,11 +43,10 @@ func TestTwoInOrder(t *testing.T) {
 
 	// Act
 	fmt.Println(list)
-	qsort(list)
+	Qsort(list)
 	fmt.Println(list)
 
 	// Assert
-	Assert(t).That(len(list), is.EqualTo(2), "Same size")
 	Assert(t).That(list[0], is.EqualTo(value), "Same value 1")
 	Assert(t).That(list[1], is.EqualTo(value+1), "Same value 2")
 }
@@ -60,12 +58,43 @@ func TestTwoOutOfOrder(t *testing.T) {
 
 	// Act
 	fmt.Println(list)
-	qsort(list)
+	Qsort(list)
 	fmt.Println(list)
 
 	// Assert
-	Assert(t).That(len(list), is.EqualTo(2), "Same size")
 	Assert(t).That(list[0], is.EqualTo(value), "Same value 1")
 	Assert(t).That(list[1], is.EqualTo(value+1), "Same value 2")
 }
 
+func TestThree(t *testing.T) {
+	// Arrange
+	list := createList(3)
+
+	// Act
+	fmt.Println(list)
+	Qsort(list)
+	fmt.Println(list)
+
+	// Assert
+	Assert(t).That(isSorted(list), is.True, "Sorted")
+}
+
+func createList(size int) []int {
+	list := make([]int, size)
+	for i := 0; i < size; i++ {
+		list[i] = rand.Intn(100)
+	}
+	return list
+}
+
+func isSorted(list []int) bool {
+	if len(list) < 2 {
+		return true
+	}
+	val := list[0]
+	for i := 1; i < len(list); i++ {
+		if list[i] < val {return false}
+		val = list[i]
+	}
+	return true;
+}
