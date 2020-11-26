@@ -32,6 +32,28 @@
     <property name="last_opened_file_path" value="$USER_HOME$" />
   </component>
   <component name="RunManager" selected="Go Test.Tests">
+    <configuration name="TestMany in qsort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="qsort" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="qsort" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestMany\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSpecific in qsort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="qsort" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="qsort" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestSpecific\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestThree in qsort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="qsort" />
       <working_directory value="$PROJECT_DIR$" />
@@ -43,7 +65,7 @@
       <pattern value="^\QTestThree\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestTwoOutOfOrder in qsort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestThreeAgain in qsort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="qsort" />
       <working_directory value="$PROJECT_DIR$" />
       <framework value="gotest" />
@@ -51,21 +73,36 @@
       <package value="qsort" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestTwoOutOfOrder\E$" />
+      <pattern value="^\QTestThreeAgain\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestThreeInOrder in qsort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="qsort" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="qsort" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestThreeInOrder\E$" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Go Build.Run" />
       <item itemvalue="Go Test.Tests" />
       <item itemvalue="Go Test.TestThree in qsort" />
-      <item itemvalue="Go Test.TestTwoOutOfOrder in qsort" />
+      <item itemvalue="Go Test.TestThreeInOrder in qsort" />
+      <item itemvalue="Go Test.TestThreeAgain in qsort" />
+      <item itemvalue="Go Test.TestMany in qsort" />
+      <item itemvalue="Go Test.TestSpecific in qsort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestSpecific in qsort" />
         <item itemvalue="Go Test.TestThree in qsort" />
-        <item itemvalue="Go Test.TestTwoOutOfOrder in qsort" />
-        <item itemvalue="Go Test.Tests" />
-        <item itemvalue="Go Build.Run" />
+        <item itemvalue="Go Test.TestMany in qsort" />
+        <item itemvalue="Go Test.TestThreeAgain in qsort" />
+        <item itemvalue="Go Test.TestThreeInOrder in qsort" />
       </list>
     </recent_temporary>
   </component>
@@ -81,38 +118,38 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="478" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606411282932" />
-    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1606412692137">
+    <state width="2005" height="376" key="GridCell.Tab.0.bottom" timestamp="1606414331198">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.bottom/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606412692137" />
-    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1606412692136">
+    <state width="2005" height="376" key="GridCell.Tab.0.bottom/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606414331198" />
+    <state width="2005" height="376" key="GridCell.Tab.0.center" timestamp="1606414331197">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.center/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606412692136" />
-    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1606412692136">
+    <state width="2005" height="376" key="GridCell.Tab.0.center/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606414331197" />
+    <state width="2005" height="376" key="GridCell.Tab.0.left" timestamp="1606414331197">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.left/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606412692136" />
-    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1606412692137">
+    <state width="2005" height="376" key="GridCell.Tab.0.left/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606414331197" />
+    <state width="2005" height="376" key="GridCell.Tab.0.right" timestamp="1606414331198">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.right/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606412692137" />
-    <state width="2005" height="376" key="GridCell.Tab.1.bottom" timestamp="1606412683364">
+    <state width="2005" height="376" key="GridCell.Tab.0.right/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606414331198" />
+    <state width="2005" height="376" key="GridCell.Tab.1.bottom" timestamp="1606414331198">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="376" key="GridCell.Tab.1.bottom/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606412683364" />
-    <state width="2005" height="376" key="GridCell.Tab.1.center" timestamp="1606412683364">
+    <state width="2005" height="376" key="GridCell.Tab.1.bottom/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606414331198" />
+    <state width="2005" height="376" key="GridCell.Tab.1.center" timestamp="1606414331198">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="376" key="GridCell.Tab.1.center/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606412683364" />
-    <state width="2005" height="376" key="GridCell.Tab.1.left" timestamp="1606412683364">
+    <state width="2005" height="376" key="GridCell.Tab.1.center/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606414331198" />
+    <state width="2005" height="376" key="GridCell.Tab.1.left" timestamp="1606414331198">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="376" key="GridCell.Tab.1.left/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606412683364" />
-    <state width="2005" height="376" key="GridCell.Tab.1.right" timestamp="1606412683364">
+    <state width="2005" height="376" key="GridCell.Tab.1.left/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606414331198" />
+    <state width="2005" height="376" key="GridCell.Tab.1.right" timestamp="1606414331198">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="376" key="GridCell.Tab.1.right/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606412683364" />
+    <state width="2005" height="376" key="GridCell.Tab.1.right/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606414331198" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -124,8 +161,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/qsort.go</url>
-          <line>33</line>
-          <option name="timeStamp" value="6" />
+          <line>31</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/qsort.go</url>
+          <line>52</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

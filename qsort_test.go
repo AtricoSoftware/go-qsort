@@ -79,6 +79,46 @@ func TestThree(t *testing.T) {
 	Assert(t).That(isSorted(list), is.True, "Sorted")
 }
 
+func TestThreeInOrder(t *testing.T) {
+	// Arrange
+	value := rand.Intn(100)
+	list := []int{value, value + 1, value + 2}
+
+	// Act
+	fmt.Println(list)
+	Qsort(list)
+	fmt.Println(list)
+
+	// Assert
+	Assert(t).That(isSorted(list), is.True, "Sorted")
+}
+
+func TestMany(t *testing.T) {
+	// Arrange
+	list := createList(10)
+
+	// Act
+	fmt.Println(list)
+	Qsort(list)
+	fmt.Println(list)
+
+	// Assert
+	Assert(t).That(isSorted(list), is.True, "Sorted")
+}
+
+func TestSpecific(t *testing.T) {
+	// Arrange
+	list := []int{59, 81, 18}
+
+	// Act
+	fmt.Println(list)
+	Qsort(list)
+	fmt.Println(list)
+
+	// Assert
+	Assert(t).That(isSorted(list), is.True, "Sorted")
+}
+
 func createList(size int) []int {
 	list := make([]int, size)
 	for i := 0; i < size; i++ {
@@ -93,8 +133,10 @@ func isSorted(list []int) bool {
 	}
 	val := list[0]
 	for i := 1; i < len(list); i++ {
-		if list[i] < val {return false}
+		if list[i] < val {
+			return false
+		}
 		val = list[i]
 	}
-	return true;
+	return true
 }
