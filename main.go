@@ -2,38 +2,33 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"math/rand"
 	"time"
 )
 
-type cases map[string][]int
+var repeat = 8
+var size = int(math.Pow(2,20))
 
 func main() {
-	cases := make(cases)
-	addList(&cases, 30)
-	// addList(&cases, 100)
-	// addList(&cases, 10000)
-	// addList(&cases, 1000000)
+	var total time.Duration = 0
+	for i := 0; i < repeat; i++ {
+		list := makeList(size)
 
-	for k, v := range cases {
-		fmt.Println(k)
-		if len(v) <= 100 {
-			fmt.Println(v)
-		}
 		start := time.Now()
-		Qsort(v)
+		Qsort(list)
 		elapsed := time.Now().Sub(start)
-		fmt.Printf("Time taken: %s\n", elapsed)
-		if len(v) <= 100 {
-			fmt.Println(v)
-		}
+		fmt.Printf("%s\n", elapsed)
+		total += elapsed
 	}
+	fmt.Printf("Total  : %s\n", total)
+	fmt.Printf("Average: %s\n", total/time.Duration(repeat))
 }
 
-func addList(container *cases, size int) {
+func makeList(size int) []int {
 	list := make([]int, size)
 	for i := 0; i < size; i++ {
 		list[i] = rand.Intn(100)
 	}
-	(*container)[string(size)] = list
+	return list
 }

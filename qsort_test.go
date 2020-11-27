@@ -66,6 +66,19 @@ func TestTwoOutOfOrder(t *testing.T) {
 	Assert(t).That(list[1], is.EqualTo(value+1), "Same value 2")
 }
 
+func TestTheSame(t *testing.T) {
+	// Arrange
+	value := rand.Intn(100)
+	list := []int{value, value}
+
+	// Act
+	fmt.Println(list)
+	Qsort(list)
+	fmt.Println(list)
+
+	// Assert
+	Assert(t).That(isSorted(list), is.True, "Sorted")
+}
 func TestThree(t *testing.T) {
 	// Arrange
 	list := createList(3)
@@ -108,7 +121,7 @@ func TestMany(t *testing.T) {
 
 func TestSpecific(t *testing.T) {
 	// Arrange
-	list := []int{59, 81, 18}
+	list := []int{56, 0, 94, 11, 62, 89, 28, 74, 11, 45}
 
 	// Act
 	fmt.Println(list)
