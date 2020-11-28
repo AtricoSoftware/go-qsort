@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0bf18b1b-5e95-44d2-8123-f0e080fb4057" name="Default Changelist" comment="" />
+    <list default="true" id="0bf18b1b-5e95-44d2-8123-f0e080fb4057" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +16,10 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="C:\Go" />
+  <component name="GOROOT" path="$PROJECT_DIR$/../_sdk/go1.14.2" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
@@ -29,9 +34,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Go Test.Tests">
+  <component name="RunManager" selected="Go Build.Run">
     <configuration name="TestMany in qsort" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="qsort" />
       <working_directory value="$PROJECT_DIR$" />
@@ -118,21 +124,25 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="478" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606411282932" />
-    <state width="2005" height="376" key="GridCell.Tab.0.bottom" timestamp="1606414331198">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state width="2442" height="394" key="GridCell.Tab.0.bottom" timestamp="1606576126350">
+      <screen x="2560" y="1080" width="2560" height="1440" />
     </state>
+    <state width="2442" height="394" key="GridCell.Tab.0.bottom/2560.1080.2560.1440/5120.1080.2560.1440/0.1107.2560.1413/5120.0.1920.1080@2560.1080.2560.1440" timestamp="1606576126350" />
     <state width="2005" height="376" key="GridCell.Tab.0.bottom/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606414331198" />
-    <state width="2005" height="376" key="GridCell.Tab.0.center" timestamp="1606414331197">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state width="2442" height="394" key="GridCell.Tab.0.center" timestamp="1606576126350">
+      <screen x="2560" y="1080" width="2560" height="1440" />
     </state>
+    <state width="2442" height="394" key="GridCell.Tab.0.center/2560.1080.2560.1440/5120.1080.2560.1440/0.1107.2560.1413/5120.0.1920.1080@2560.1080.2560.1440" timestamp="1606576126350" />
     <state width="2005" height="376" key="GridCell.Tab.0.center/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606414331197" />
-    <state width="2005" height="376" key="GridCell.Tab.0.left" timestamp="1606414331197">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state width="2442" height="394" key="GridCell.Tab.0.left" timestamp="1606576126350">
+      <screen x="2560" y="1080" width="2560" height="1440" />
     </state>
+    <state width="2442" height="394" key="GridCell.Tab.0.left/2560.1080.2560.1440/5120.1080.2560.1440/0.1107.2560.1413/5120.0.1920.1080@2560.1080.2560.1440" timestamp="1606576126350" />
     <state width="2005" height="376" key="GridCell.Tab.0.left/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606414331197" />
-    <state width="2005" height="376" key="GridCell.Tab.0.right" timestamp="1606414331198">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state width="2442" height="394" key="GridCell.Tab.0.right" timestamp="1606576126350">
+      <screen x="2560" y="1080" width="2560" height="1440" />
     </state>
+    <state width="2442" height="394" key="GridCell.Tab.0.right/2560.1080.2560.1440/5120.1080.2560.1440/0.1107.2560.1413/5120.0.1920.1080@2560.1080.2560.1440" timestamp="1606576126350" />
     <state width="2005" height="376" key="GridCell.Tab.0.right/4096.868.1536.848/2048.0.2048.1112/0.0.2048.1112/-2048.0.2048.1112@0.0.2048.1112" timestamp="1606414331198" />
     <state width="2005" height="376" key="GridCell.Tab.1.bottom" timestamp="1606414331198">
       <screen x="0" y="0" width="2048" height="1112" />
@@ -161,13 +171,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/qsort.go</url>
-          <line>31</line>
+          <line>30</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/qsort.go</url>
-          <line>52</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
