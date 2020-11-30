@@ -15,18 +15,18 @@ func qsort(list []int, start int, end int, wg *sync.WaitGroup) {
 		return
 	}
 	pivot := list[end]
-	j := start - 1
+	j := start
 	for i := start; i < end; i++ {
 		if list[i] < pivot {
-			j++
 			swap(list, i, j)
+			j++
 		}
 	}
-	swap(list, j+1, end)
+	swap(list, j, end)
 
 	wg.Add(1)
-	go qsort(list, start, j, wg)
-	go qsort(list, j+2, end, wg)
+	go qsort(list, start, j-1, wg)
+	go qsort(list, j+1, end, wg)
 }
 
 func swap(list []int, idx1 int, idx2 int) {
