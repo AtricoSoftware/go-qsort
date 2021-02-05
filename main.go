@@ -1,41 +1,40 @@
 package main
 
-import (
-	"fmt"
-	"math"
-	"math/rand"
-	"sort"
-	"time"
-)
-
-var repeat = 8
-var size = int(math.Pow(2,20))
+import "sync"
 
 func main() {
-	var total time.Duration = 0
-	var total2 time.Duration = 0
-	for i := 0; i < repeat; i++ {
-		list,list2 := makeList(size)
-		start := time.Now()
-		Qsort(list)
-		elapsed := time.Now().Sub(start)
-		start = time.Now()
-		sort.Ints(list2)
-		elapsed2 := time.Now().Sub(start)
-		fmt.Printf("%s\t%s\n", elapsed, elapsed2)
-		total += elapsed
-		total2 += elapsed2
-	}
-	fmt.Printf("Total  : %s\t%s\n", total, total2)
-	fmt.Printf("Average: %s\t%s\n", total/time.Duration(repeat), total2/time.Duration(repeat))
 }
 
-func makeList(size int) ([]int,[]int) {
-	list := make([]int, size)
-	for i := 0; i < size; i++ {
-		list[i] = rand.Intn(100)
+type queue struct {
+	queue []int
+	len   int
+	readMutex sync.Mutex
+	writeMutex sync.Mutex
+}
+
+func newQueue() queue {
+	return queue{queue: make([]int, 0), len: 0}
+}
+
+func (q *queue) push(value int) {
+	q.writeMutex.Lock()
+	defer q.writeMutex.Unlock()
+	q.queue = append(q.queue, value)
+	q.len++
+}
+
+func (q *queue) pop() node {
+	// Wait for data available
+	q.writeMutex.Lock()
+	q.writeMutex.Unlock()
+
+	q.mut.Lock()
+	defer q.mut.Unlock()
+	if q.isEmpty() {
+		panic("Queue is isEmpty")
 	}
-	list2 := make([]int,size)
-	copy(list2,list)
-	return list,list2
+	val := q.queue[0]
+	q.queue = q.queue[1:]
+	q.len--
+	return val
 }
